@@ -1,9 +1,9 @@
 import { Routes } from '@angular/router';
-import { Page } from '././components/page/page';
+import { PageComponent } from './components/page-component/page-component';
 import { App } from './app';
 
 export const routes: Routes = [
     { path: '', component: App },
-    { path: 'page', component: Page },
+    { path: 'page', component: PageComponent },
 ];
 
