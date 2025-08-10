@@ -3,6 +3,7 @@ import { AvatarModule } from 'primeng/avatar';
 import { AvatarGroupModule } from 'primeng/avatargroup';
 
 @Component({
+  standalone: true,
   selector: 'app-page-component',
   imports: [AvatarModule, AvatarGroupModule],
   templateUrl: './page-component.html',
