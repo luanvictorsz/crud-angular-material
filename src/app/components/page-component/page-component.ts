@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
+import { AvatarModule } from 'primeng/avatar';
+import { AvatarGroupModule } from 'primeng/avatargroup';
 
 @Component({
   selector: 'app-page-component',
-  imports: [],
+  imports: [AvatarModule, AvatarGroupModule],
   templateUrl: './page-component.html',
   styleUrl: './page-component.css'
 })
