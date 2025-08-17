@@ -1,12 +1,20 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-
-@Component({
-  imports: [RouterOutlet],
+import { Component } from '@angular/core';
+import { MatButtonModule } from '@angular/material/button'
+import { MatToolbarModule } from '@angular/material/toolbar'
+import { RouterOutlet, RouterLink } from '@angular/router';
+@
+Component({
+  standalone: true,
   selector: 'app-root',
+  imports: [
+    MatButtonModule, 
+    MatToolbarModule, 
+    RouterOutlet, 
+    RouterLink
+  
+  ],
+
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrls: ['./app.css'] 
 })
-export class App {
-  protected readonly title = signal('crud-angular-material');
-}
+export class AppComponent {}
