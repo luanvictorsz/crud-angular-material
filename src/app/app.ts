@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button'
 import { MatToolbarModule } from '@angular/material/toolbar'
 import { RouterOutlet, RouterLink } from '@angular/router';
@@ -16,4 +16,6 @@ Component({
   templateUrl: './app.html',
   styleUrls: ['./app.css'] 
 })
-export class AppComponent {}
+export class app {
+  protected readonly title = signal('Cadastro de clientes')
+}
