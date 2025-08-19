@@ -11,7 +11,6 @@ Component({
     MatToolbarModule, 
     RouterOutlet, 
     RouterLink
-  
   ],
 
   templateUrl: './app.html',

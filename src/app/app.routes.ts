@@ -5,7 +5,6 @@ import { Cadastro } from './components/cadastro/cadastro';
 
 export const routes: Routes = [
     { path: '', component: AppComponent },
-    { path: 'page', component: AppComponent },
     { path: 'Consulta', component: Consulta},
     { path: 'Cadastro', component: Cadastro}
 ];
