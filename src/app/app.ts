@@ -7,14 +7,13 @@ Component({
   standalone: true,
   selector: 'app-root',
   imports: [
-    MatButtonModule, 
-    MatToolbarModule, 
-    RouterOutlet, 
-    RouterLink
+    MatButtonModule,
+    MatToolbarModule,
+    RouterOutlet,
   ],
 
   templateUrl: './app.html',
-  styleUrls: ['./app.css'] 
+  styleUrls: ['./app.css']
 })
 export class app {
   protected readonly title = signal('Cadastro de clientes')
