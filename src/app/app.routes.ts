@@ -1,10 +1,10 @@
 import { Routes } from '@angular/router';
-import { app } from './app';
+import { AppComponent } from './app';
 import { Consulta } from './components/consulta/consulta';
 import { Cadastro } from './components/cadastro/cadastro';
 
 export const routes: Routes = [
-    { path: '', component: app },
+    { path: '', component: AppComponent },
     { path: 'Consulta', component: Consulta},
     { path: 'Cadastro', component: Cadastro}
 ];
