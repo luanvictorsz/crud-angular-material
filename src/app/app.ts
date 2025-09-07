@@ -2,7 +2,7 @@ import { Component, signal } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button'
 import { MatToolbarModule } from '@angular/material/toolbar'
 import { Navbar } from "./components/navbar/navbar";
-import { RouterOutlet } from '@angular/router';
+import { User } from "./view/user/user";
 @
 Component({
   standalone: true,
@@ -11,7 +11,7 @@ Component({
     MatButtonModule,
     MatToolbarModule,
     Navbar,
-    RouterOutlet
+    User
 ],
 
   templateUrl: './app.html',
