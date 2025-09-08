@@ -3,7 +3,7 @@ import { CardModule } from 'primeng/card';
 
 @Component({
   selector: 'app-user',
-  imports: [CardModule],
+  imports: [ CardModule, ],
   templateUrl: './user.html',
   styleUrl: './user.css'
 })

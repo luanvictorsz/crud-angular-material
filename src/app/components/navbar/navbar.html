@@ -1,7 +1,12 @@
-<mat-toolbar color="primary">
-  <span>Cadastro de Clientes</span>
-  <span class="spacer flex row justify-content-between"></span>
-  <a routerLink="/Cadastro">Formulário</a>
-  <a routerLink="/Consulta">Consulta</a>
-</mat-toolbar>
+<mat-toolbar class="flex align-items-center justify-content-between px-4 py-2 bg-primary text-white">
+  <span class="font-bold text-lg">Cadastro de Clientes</span>
 
+  <div class="flex gap-3">
+    <a routerLink="/Cadastro" class="no-underline text-white hover:text-yellow-300 transition-colors transition-duration-200">
+      Formulário
+    </a>
+    <a routerLink="/Consulta" class="no-underline text-white hover:text-yellow-300 transition-colors transition-duration-200">
+      Consulta
+    </a>
+  </div>
+</mat-toolbar>
