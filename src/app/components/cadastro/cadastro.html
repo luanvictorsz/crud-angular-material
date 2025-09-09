@@ -1,2 +1,31 @@
 <app-navbar></app-navbar>
-<h3>teste</h3>
+
+<p-card class="m-4 p-4 flex flex-column gap-4">
+  <div class="flex align-items-center gap-2">
+    <h3 class="m-0">Formulário de Registro</h3>
+  </div>
+
+  <p-divider></p-divider>
+
+  <form class="grid w-full">
+    <div class="col-12 md:col-6">
+      <label for="nome" class="flex align-items-center gap-2 mb-2 font-medium">
+        <i class="pi pi-user"></i>
+        Nome do Cliente
+      </label>
+      <input id="nome" type="text" pInputText class="w-full" />
+    </div>
+
+    <div class="col-12 md:col-6">
+      <label for="codigo" class="flex align-items-center gap-2 mb-2 font-medium">
+        <i class="pi pi-code"></i>
+        Código de Registro
+      </label>
+      <input id="codigo" type="text" pInputText class="w-full" />
+    </div>
+  </form>
+
+  <div class="flex justify-content-end m-3">
+    <p-button label="Registrar" icon="pi pi-check"></p-button>
+  </div>
+</p-card>
