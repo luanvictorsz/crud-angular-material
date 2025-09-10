@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { Navbar } from "../navbar/navbar";
 
 @Component({
+  standalone: true,
   selector: 'app-consulta',
-  imports: [Navbar],
+  imports: [],
   templateUrl: './consulta.html',
   styleUrl: './consulta.css'
 })

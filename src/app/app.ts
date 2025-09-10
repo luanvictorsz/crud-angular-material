@@ -1,21 +1,20 @@
-import { Component, signal } from '@angular/core';
-import { MatButtonModule } from '@angular/material/button'
-import { MatToolbarModule } from '@angular/material/toolbar'
-import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
+import { MatButtonModule } from '@angular/material/button';
+import { MatToolbarModule } from '@angular/material/toolbar';
+// import { RouterOutlet } from '@angular/router';
+import { Navbar } from './components/navbar/navbar';
+import { RouterOutlet } from "@angular/router"; 
 
-@
-Component({
+@Component({
   standalone: true,
   selector: 'app-root',
+  templateUrl: './app.html',  
+  styleUrls: ['./app.css'],
   imports: [
     MatButtonModule,
     MatToolbarModule,
+    Navbar,
     RouterOutlet
-],
-
-  templateUrl: './app.html',
-  styleUrls: ['./app.css']
+]
 })
-export class AppComponent {
-  protected readonly title = signal('Cadastro de clientes')
-}
+export class AppComponent {}
